@@ -1,0 +1,343 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+@font-face {
+    font-family: h1;
+    src: url(Yeast\ 22\ Regular.otf);
+}
+@font-face {
+    font-family: menu;
+    src: url(VCROSDMonoNova.ttf);
+}
+@font-face {
+    font-family: p1;
+    src: url(LuxuryText-Bold.otf);
+}
+@font-face {
+    font-family: footer;
+    src: url(MortifiedDrip.ttf);
+}
+h1{
+    width: 450px;
+    height: 70px;
+    font: bold 50px h1;
+    float: left;
+    margin-left: 60px;
+    margin-right: 20px;
+    text-align: center;
+    margin-top: 30px;
+    color: #9c7c32;
+    text-transform: uppercase;
+}
+h1:hover{
+    letter-spacing: 3px;
+    font: normal 50px h1;
+    transition: .8s;
+}
+.menu li{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 30px;
+    /* border: 3px solid #000; */
+    background: #e5cf9c;
+}
+.menu li:hover{
+    width: 170px;
+    height: 40px;
+    font: bold 25px menu;
+    transition: 1s;
+    margin-top: 5px;
+    box-shadow: 0px 0px 10px rgb(114, 119, 124), 0px 0px 8px rgb(114, 119, 124);
+    text-transform: uppercase;
+}
+.list{
+    width: 150px;
+    min-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 1130px;
+    transition: .8s;
+    clip-path: circle(0 at 0 0);
+}
+.list > li{
+    list-style: none;
+    background: #e5cf9c;
+    border: none;
+    border-radius: 10px;
+    font: normal 25px menu;
+    transition: .8s;
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin-top: 10px;
+    place-items: center;
+}
+.list > li:hover{
+    box-shadow: 0px 0px 10px rgb(114, 119, 124), 0px 0px 8px rgb(114, 119, 124);
+    letter-spacing: 5px;
+    font: bold 30px menu;
+}
+.menu .contact:hover .list{
+    clip-path: circle(200% at 50% 50%);
+}
+.sect1{
+    width: 100%; 
+    height: 700px; 
+    /* border: 1px solid #000;   */
+    background: url(fon1.jpg) no-repeat center / 100% 100%;
+    display: flex;
+}
+.hotelimg{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider{
+    width: 80%;
+    height: 500px;
+    background: url(1.avif) no-repeat center / cover;
+    position: relative;
+    transition: .6s;
+}
+.slider .radio{
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.slider .radio input[type="radio"]{
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    display: inline-block;
+    position: relative;
+    cursor: grab;
+}
+.slider .radio input[type="radio"]::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #0f0;
+    transition: .8s;
+    opacity: 0;
+}
+.slider .radio #r1:checked::after{
+    opacity: 1;
+}
+.slider .radio #r2:checked::after{
+    opacity: 1;
+}
+.slider .radio #r3:checked::after{
+    opacity: 1;
+}
+.slider .radio #r4:checked::after{
+    opacity: 1;
+}
+.slider .radio #r5:checked::after{
+    opacity: 1;
+}
+.slider button{
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    translate: 0 -50%;
+    font-size: 2.7rem;
+    padding: 0 20px;
+    cursor: grab;
+    color: #0f0;
+    background-color: #0007;
+    border: 1px solid #0f0;
+}
+.slider .prew{
+    left: 3%;
+}
+.slider .next{
+    right: 3%;
+}
+.p1{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p1 #p1{
+    width: 80%;
+    float: left;
+    margin-top: -80px;
+    font: bold 20px p1;
+    text-align: left;
+    color:rgb(0, 0, 0)
+}
+.sect2{
+    width: 100%;
+    height: 700px;
+    background: url(fon2.jpg) no-repeat center / 100% 100%;
+}
+#s2h2{
+    text-align: center;
+    font: bold 30px h1;
+    color: #9c7c32;
+    text-transform: uppercase;
+    transition: .7s;
+    text-align: center;
+}
+.sect2 h2:hover{
+    font: bold 35px h1;
+    transition: .7s;
+    letter-spacing: 3px;
+}
+.slider2{
+    width: 100%;
+    height: 95%;
+    background: none;
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.item{
+    width: 80%;
+    height: 80%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f00;
+    position: absolute;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.items{
+    width: 10%;
+    height: 100%;
+    border: 1px solid #f00;
+}
+#a1{
+    background: url(a1.jpg);
+}
+#a2{
+    background: url(a2.jpg);
+}
+#a3{
+    background: url(a3.jpg);
+}
+#a4{
+    background: url(a4.jpg);
+}
+#a5{
+    background: url(a5.jpg);
+}
+#a6{
+    background: url(a6.jpg);
+}
+#a7{
+    background: url(a7.jpg);
+}
+#a1,#a2,#a3,#a4,#a5,#a6,#a7{
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+}
+.gif{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+}
+footer{
+    width:100%;
+    height:250px;
+    background: #302d2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxf{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font: normal 15px p2;
+    color: #fff;
+}
+.boxf ul{
+    list-style-type: none;
+}
+ul > li{
+    margin-top: 20px;
+}
+ul > li:hover{
+    letter-spacing: 1px;
+    font: normal 18px p2;
+}
+#txt{
+    width: 300px;
+    height: 200px;
+    background: #f005;
+    color: #fff;
+    resize: none;
+    
+}
+.lang{
+    position: absolute;
+    top: 1700px;
+    right: 50px;
+    display: flex;
+    gap: 3px;
+}
+.lang button{
+    width: 45px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    outline: 0;
+}
+.lang button:hover{
+    transform: translate(0, 6px);
+    }
+.lang button:first-child{
+    background: url(https://flagemoji.net/img/flags/usa-flag.png) no-repeat center / cover;
+}
+.lang button:nth-child(2){
+    background: linear-gradient(#fff 33%, #00f 33% 66%, #f00 66% 100%);
+}
+.fot{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #302d2d;
+    border-top: 2px solid #fff;
+}
+#ft{
+    font: normal 20px footer;
+    color: #fff;
+}
